@@ -1,0 +1,67 @@
+[watching and logging]
+sum_watchpaths = 2
+path_watch1 = C:/F699m125/e/VT-X750-0099/VolumeData/A5E3737764905_2_InspectionImage
+path_watch2 = C:/F699m125/e/VT-X750-0099/VolumeData/A5E3737765005_2_InspectionImage
+
+path_log = C:\Users\Z004KVJF\Desktop\git-clone\pseudo_xray\Logging\wd_xray_sql_test.log
+
+[model]
+modelDir = C:\Users\MC2000\PycharmProjects\TestProject\VGG_Testing
+
+[Boardlayout]
+path_mapping_rec_qme = C:\Users\Z004KVJF\Desktop\git-clone\pseudo_xray\pseudo_xray_application\Metadata
+
+[SQLServer]
+sqlData = mysql+mysqlconnector://root:admin@localhost:3306/xraydb
+host = localhost
+user = root
+password = admin
+database = xraydb
+
+[MinIOServer]
+link = 127.0.0.1:9001
+firstKey = Objectstorage
+secondKey = minio123
+path_local_pc = C:\Users\Z004KVJF\Desktop\git-clone\pseudo_xray\pseudo_xray_application\MinIO
+
+[CutX1Images]
+cutArray = True #True or False
+
+[modelSpecification]
+modelType = ImgClass2D
+
+[machineName]
+machineClient = F699
+
+[FutureBoards]
+pathFutureBoards = FutureBoards.csv
+
+[QME_Webservice]
+url = https://intra5.amb2.siemens.de:8033/pls/scout/scout.ws.get_defects_xrayy
+username = ewa_pe_xray
+password = 
+updateInterval = 3600
+
+[QME_offline_Database]
+path = QME_Database.csv
+
+[Probability_Threshold]
+threshold = 0.99
+
+[Comesco_System_Type]
+system = Q #Q or P
+
+[CSV]
+pathCSV = C:\Users\MC2000\PythonC#Exchange\FID.csv
+pathDict = dict.txt
+
+[Clustering_model]
+dual_model_classification = True
+autoencodertype = AE2D
+image_size = 224
+batch_size = 16
+latent_size = 3
+threshold = 0.00055
+
+[Gradcam]
+gradcam_generation = False
